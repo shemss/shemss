@@ -1,0 +1,20 @@
+# Site settings
+title: Shemss
+email: shemss@gmail.com
+description: >
+  Awesome construction company in Lake Tahoe
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://shemss.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+exclude: [Gemfile, Gemfile.lock]
+
+gems:
+  - jekyll-assets
+  - jekyll-assets/bootstrap
+  - jekyll-sitemap
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
