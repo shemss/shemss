@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<div class="scene-wrapper">
+  <ul id="scene" class="scene list-unstyled">
+    <li class="layer" data-depth="0.00"></li>
+    <li class="layer" data-depth="0.05">
+      <img class="scene-stars"
+        src="{{ '/images/scene/stars.jpg' | prepend: site.baseurl }}">
+    </li>
+    <li class="layer" data-depth="0.10">
+      <div class="scene-sky"></div>
+    </li>
+    <li class="layer" data-depth="0.15">
+      <div class="scene-clouds"></div>
+    </li>
+    <li class="layer" data-depth="0.30">
+      <div class="scene-mountain-b"></div>
+    </li>
+    <li class="layer" data-depth="0.50">
+      <div class="scene-mountain"></div>
+    </li>
+    <li class="layer" data-depth="0.25">
+      <div class="scene-logo"></div>
+    </li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

@@ -1,0 +1,4 @@
+initParallax = ->
+  $('#scene').parallax();
+
+$ initParallax
