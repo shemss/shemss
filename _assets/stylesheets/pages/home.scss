@@ -60,8 +60,7 @@ html, body {
 }
 
 .scene-sky,
-.scene-mountain,
-.scene-mountain-b {
+.scene-mountain {
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -108,8 +107,7 @@ html, body {
   @include animation-timing-function(linear);
 }
 
-.scene-mountain,
-.scene-mountain-b {
+.scene-mountain {
   background-position: center bottom;
   background-size: contain;
 
@@ -129,13 +127,13 @@ html, body {
   }
 }
 
-.scene-mountain {
-  background-image: url(/images/scene/mountain.png);
-}
-
-.scene-mountain-b {
-  background-image: url(/images/scene/mountain-b.png);
-}
+.scene-mountain-1 { background-image: url(/images/scene/mountain-1.png); }
+.scene-mountain-2 { background-image: url(/images/scene/mountain-2.png); }
+.scene-mountain-3 { background-image: url(/images/scene/mountain-3.png); }
+.scene-mountain-4 { background-image: url(/images/scene/mountain-4.png); }
+.scene-mountain-5 { background-image: url(/images/scene/mountain-5.png); }
+.scene-mountain-6 { background-image: url(/images/scene/mountain-6.png); }
+.scene-lake       { background-image: url(/images/scene/lake.png); }
 
 @-webkit-keyframes scene-pulse-logo {
   0% { opacity: 0.25; }
