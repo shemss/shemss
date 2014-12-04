@@ -80,20 +80,25 @@ html, body {
   left: -5%;
 }
 
+$cloud-top: 20%;
+$cloud-scale: 0.75;
+$cloud-width: 4096px * $cloud-scale;
+$cloud-height: 834px * $cloud-scale;
+
 @-webkit-keyframes scene-drift-clouds {
-  from { background-position: 0px 0px; }
-  to { background-position: -4096px 0px; }
+  from { background-position: 0px $cloud-top; }
+  to { background-position: -$cloud-width $cloud-top; }
 }
 @keyframes scene-drift-clouds {
-  from { background-position: 0px 0px; }
-  to { background-position: -4096px 0px; }
+  from { background-position: 0px $cloud-top; }
+  to { background-position: -$cloud-width $cloud-top; }
 }
 
 .scene-clouds {
   background-image: url(/images/scene/clouds.png);
   background-repeat: repeat-x;
-  background-size: cover;
-  background-position: 0px 0px;
+  background-size: $cloud-width $cloud-height;
+  background-position: 0px $cloud-top;
   opacity: 0.3;
 
   width: 110%;
