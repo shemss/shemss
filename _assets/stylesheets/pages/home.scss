@@ -136,20 +136,20 @@ $cloud-height: 834px * $cloud-scale;
 
 @-webkit-keyframes scene-pulse-logo {
   0% { opacity: 0.25; }
-  50% { opacity: 0.75; }
+  50% { opacity: 0.65; }
   100% { opacity: 0.25; }
 }
 @keyframes scene-pulse-logo {
   0% { opacity: 0.25; }
-  50% { opacity: 0.75; }
+  50% { opacity: 0.65; }
   100% { opacity: 0.25; }
 }
 
 .scene-logo {
   background-image: url(/images/scene/logo.svg);
   background-repeat: no-repeat;
-  background-position: center 33%;
-  opacity: 0.75;
+  background-position: center 25%;
+  opacity: 0.65;
 
   @media (max-width: $screen-xs-max) {
     background-size: contain;
