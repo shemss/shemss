@@ -74,10 +74,10 @@ html, body {
   background-image: -webkit-radial-gradient($shape $position, $inner-color, $outer-color);
   background-image: radial-gradient($shape at $position, $inner-color, $outer-color);
 
-  width: 110%;
-  height: 110%;
-  top: -5%;
-  left: -5%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 $cloud-top: 20%;
@@ -101,9 +101,9 @@ $cloud-height: 834px * $cloud-scale;
   background-position: 0px $cloud-top;
   opacity: 0.3;
 
-  width: 110%;
+  width: 100%;
   height: 100%;
-  left: -5%;
+  left: 0;
   position: absolute;
 
   @include animation-name(scene-drift-clouds);
@@ -116,19 +116,19 @@ $cloud-height: 834px * $cloud-scale;
   background-position: center bottom;
   background-size: contain;
 
-  height: 110%;
+  height: 100%;
 
-  width: 200%;
-  left: -50%;
+  width: 150%;
+  left: -25%;
 
   @media (min-width: $screen-sm-min) {
-    width: 150%;
-    left: -25%;
+    width: 120%;
+    left: -10%;
   }
 
   @media (min-width: $screen-md-min) {
-    width: 120%;
-    left: -10%;
+    width: 100%;
+    left: 0%;
   }
 }
 
