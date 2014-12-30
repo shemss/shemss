@@ -93,7 +93,7 @@ html, body {
 $cloud-top: 20%;
 $cloud-scale: 0.75;
 $cloud-width: 4096px * $cloud-scale;
-$cloud-height: 834px * $cloud-scale;
+$cloud-height: 836px * $cloud-scale;
 
 @-webkit-keyframes scene-drift-clouds {
   from { -webkit-transform: translateX(0px); }
