@@ -60,7 +60,8 @@ html, body {
 }
 
 .scene-sky,
-.scene-mountain {
+.scene-mountain,
+.scene-lake {
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -112,7 +113,8 @@ $cloud-height: 834px * $cloud-scale;
   @include animation-timing-function(linear);
 }
 
-.scene-mountain {
+.scene-mountain,
+.scene-lake {
   background-position: center bottom;
   background-size: contain;
 
@@ -133,6 +135,7 @@ $cloud-height: 834px * $cloud-scale;
 }
 
 .scene-mountain { background-image: url(/images/scene/mountain.png); }
+.scene-lake     { background-image: url(/images/scene/lake.jpg); }
 
 @-webkit-keyframes scene-pulse-logo {
   0% { opacity: 0.25; }
