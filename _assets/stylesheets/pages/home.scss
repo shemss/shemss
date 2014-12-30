@@ -54,7 +54,7 @@ html, body {
   }
 
   @include animation-name(scene-spin-stars);
-  @include animation-duration(4000s);
+  @include animation-duration(4500s);
   @include animation-iteration-count(infinite);
   @include animation-timing-function(linear);
 }
@@ -108,7 +108,7 @@ $cloud-height: 834px * $cloud-scale;
   position: absolute;
 
   @include animation-name(scene-drift-clouds);
-  @include animation-duration(500s);
+  @include animation-duration(360s);
   @include animation-iteration-count(infinite);
   @include animation-timing-function(linear);
 }
