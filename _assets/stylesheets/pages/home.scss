@@ -149,7 +149,8 @@ $cloud-height: 834px * $cloud-scale;
 }
 
 .scene-logo {
-  background-image: url(/images/scene/logo.svg);
+  background-image: url(/images/scene/logo.png);
+  background-image: url(/images/scene/logo.svg), none;
   background-repeat: no-repeat;
   background-position: center 25%;
   opacity: 0.65;
