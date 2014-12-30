@@ -6,6 +6,20 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://shemss.com" # the base hostname & protocol for your site
 
+nav:
+- title: Services
+  subtitle: Builders
+  url: /services/
+- title: Projects
+  subtitle: Gallery of Our Work
+  url: /projects/
+- title: About
+  subtitle: Our Approach
+  url: /about/
+- title: Contact
+  subtitle: Get in Touch
+  url: /contact/
+
 # Build settings
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock]

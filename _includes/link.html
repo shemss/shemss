@@ -1,0 +1,8 @@
+<li{% if include.link.url == page.url %} class="active"{% endif %}>
+  <a href="{{ include.link.url | prepend: site.baseurl }}">
+    {{ include.link.title }}
+    {% if include.link.url == page.url %}
+    <span class="sr-only">(current)</span>
+    {% endif %}
+  </a>
+</li>

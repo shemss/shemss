@@ -14,9 +14,7 @@
 
     <div class="collapse navbar-collapse" id="site-navbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="{{ page.about_active }}">
-          <a href="{{ '/about/' | prepend: site.baseurl }}">About {{ site.title }}</a>
-        </li>
+        {% include nav.html %}
       </ul>
     </div>
   </div>
