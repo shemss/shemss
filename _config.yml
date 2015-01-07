@@ -6,6 +6,12 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://shemss.com" # the base hostname & protocol for your site
 
+social:
+  facebook: https://www.facebook.com/shemssinc
+  twitter: https://twitter.com/SHEMSSinc
+  youtube: https://www.youtube.com/user/SHEMSSconstruction
+  google-plus: https://plus.google.com/108316022689360703562/posts
+
 nav:
 - title: Services
   subtitle: Builders
