@@ -1,0 +1,59 @@
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-center {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+
+    li {
+      text-align: center;
+      font-size: ($font-size-base * 2);
+      font-family: "TW Cen MT", "Century Gothic", CenturyGothic, Futura, "Trebuchet MS", $font-family-base;
+      text-transform: uppercase;
+
+      a, a:link, a:visited {
+        color: #d9d9d9;
+      }
+
+      a:hover, a:active {
+        color: lighten($brand-primary, 15%) !important;
+      }
+
+      small {
+        color: lighten($brand-primary, 10%);
+        font-size: $font-size-small;
+        text-transform: lowercase;
+      }
+
+      // &.odd a {
+      //   color: #d9d9d9;
+      // }
+
+      // &.even a {
+      //   color: lighten($brand-primary, 10%);
+      // }
+
+      // &.odd a:hover,
+      // &.even a:hover {
+      //   color: lighten($brand-primary, 25%);
+      // }
+    }
+  }
+
+  body.home .navbar {
+    background: rgba($navbar-inverse-bg, 0.25);
+    border-color: rgba($navbar-inverse-border, 0.25);
+  }
+}
+
+body {
+  padding-top: 50px;
+
+  @media (min-width: $grid-float-breakpoint) {
+    padding-top: 77px;
+  }
+
+  &.home {
+    padding-top: 0;
+  }
+}

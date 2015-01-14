@@ -1,5 +1,5 @@
-<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-  <div class="container">
+<nav class="navbar navbar-inverse {% if page.url == '/index.html' %}navbar-fixed-bottom{% else %}navbar-fixed-top{% endif %}" role="navigation">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="collapse navbar-collapse" id="site-navbar">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-center">
         {% include nav.html %}
       </ul>
     </div>

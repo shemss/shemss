@@ -14,6 +14,7 @@
     </ul>
   </li>
   {% else %}
-  {% include link.html link=link %}
+  {% capture oddeven %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% include link.html link=link oddeven=oddeven %}
   {% endif %}
 {% endfor %}

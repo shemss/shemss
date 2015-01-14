@@ -11,6 +11,7 @@ social:
   twitter: https://twitter.com/SHEMSSinc
   youtube: https://www.youtube.com/user/SHEMSSconstruction
   google-plus: https://plus.google.com/108316022689360703562/posts
+  pinterest: http://www.pinterest.com/sergshemyakin/
 
 nav:
 - title: Services
@@ -22,6 +23,9 @@ nav:
 - title: About
   subtitle: Our Approach
   url: /about/
+- title: Resources
+  subtitle: Educated Choices
+  url: /resources
 - title: Contact
   subtitle: Get in Touch
   url: /contact/
