@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <div class="shards">
+    <ul class="nav" role="tablist">
+      {% for tab in page.tabs %}
+      <li role="presentation"{% if forloop.first %} class="active"{% endif %}>
+        <a href="#{{ tab.slug }}" aria-controls="{{ tab.slug }}" role="tab" data-toggle="tab"
+          style="background-image:url({{ tab.image | prepend: site.baseurl }})">
+          <div class="shard-title"><h1 class="h4">{{ tab.title }}</h1></div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    {% for tab in page.tabs %}
+    <div role="tabpanel" id="{{ tab.slug }}"
+      class="tab-pane fade{% if forloop.first %} in active{% endif %}">
+
+      <article class="container">
+        <header class="sr-only">
+          <h1>{{ tab.title }}</h1>
+        </header>
+        {% include {{ tab.content }} %}
+      </article>
+
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+{{ content }}
