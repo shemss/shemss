@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h5>We are always looking for talented people to join our team.</h5>
+
+    <p>
+      To apply, download
+      <a href="{{ '/documents/application.pdf' | prepend: site.baseurl }}" target="_blank">
+        our employment application</a>
+      (Adobe Acrobat Reader required) or contact Human Resources
+      for an application. Mail or email your completed application
+      along with a cover letter and resume to:
+    </p>
+
+    <p class="vcard">
+      <span class="fn org">
+        <span class="organization-name">{{ site.title }} Inc.</span><br>
+        <span class="organization-unit">Human Resources Department</span><br>
+      </span>
+      <span class="adr">{{ site.address }}</span><br>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <img class="img-responsive"
+      src="{{ '/images/contact/careers-house.jpg' | prepend: site.baseurl }}">
+  </div>
+</div>

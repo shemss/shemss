@@ -1,6 +1,14 @@
 # Site settings
 title: Shemss
 email: shemss@gmail.com
+phone: 775 580 7152
+fax: 530 621 2200
+address: >
+  <span class="street-address">258 Kingsbury Grade</span><br>
+  <span class="locality">Stateline</span>,
+  <abbr class="region" title="Nevada">NV</abbr>
+  <span class="postal-code">89449</span>
+
 description: >
   Awesome construction company in Lake Tahoe
 baseurl: "" # the subpath of your site, e.g. /blog/
