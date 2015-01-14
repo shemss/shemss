@@ -6,6 +6,7 @@ $footer-link-color: #668899;
   background: url('/images/footer.jpg') no-repeat;
   background-size: cover;
   text-align: center;
+  margin-top: 70px;
 
   color: $footer-color;
 
@@ -18,6 +19,10 @@ $footer-link-color: #668899;
       color: lighten($footer-link-color, 10%);
     }
   }
+}
+
+body.home .site-footer {
+  margin-top: 0;
 }
 
 .footer-top {
