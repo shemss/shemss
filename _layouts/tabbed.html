@@ -6,7 +6,7 @@ layout: default
 
   <!-- Nav tabs -->
   <div class="shards">
-    <ul class="nav" role="tablist">
+    <ul class="nav nav-tabs" role="tablist">
       {% for tab in page.tabs %}
       <li role="presentation"{% if forloop.first %} class="active"{% endif %}>
         <a href="#{{ tab.slug }}" aria-controls="{{ tab.slug }}" role="tab" data-toggle="tab"
