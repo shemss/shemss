@@ -6,6 +6,11 @@
   &:after {
     content: " inc.";
     text-transform: none;
+
+    @media (min-width: $grid-float-breakpoint)
+    and (max-width: $screen-sm-max) {
+      content: none;
+    }
   }
 
   @media (min-width: $grid-float-breakpoint) {

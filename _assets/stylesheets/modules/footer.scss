@@ -7,6 +7,7 @@ $footer-link-color: #668899;
   background-size: cover;
   text-align: center;
   margin-top: 70px;
+  overflow: hidden;
 
   color: $footer-color;
 
@@ -40,14 +41,57 @@ body.home .site-footer {
 }
 
 .footer-social {
-  padding: 80px 0 40px;
+  padding: 35px 0 0;
   margin-bottom: 0;
 
-  margin-left: -20px;
+  margin: 0 -25px;
 
   li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 25px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding-top: 50px;
+    margin: 0 -30px;
+
+    li {
+      padding: 0 30px;
+      margin-bottom: 40px;
+    }
+
+    .fa {
+      font-size: 5em;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding-top: 70px;
+    margin: 0 -40px;
+
+    li {
+      padding: 0 40px;
+      margin-bottom: 60px;
+    }
+
+    .fa {
+      font-size: 6em;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-top: 90px;
+    margin: 0 -50px;
+
+    li {
+      padding: 0 50px;
+      margin-bottom: 80px;
+    }
+
+    .fa {
+      font-size: 8em;
+    }
   }
 
   a {
@@ -63,9 +107,30 @@ body.home .site-footer {
 
 .footer-bottom {
   background: rgba(lighten($footer-bg, 10%), 0.9);
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 
   .copyright {
     font-size: $font-size-small;
+    margin-bottom: 0;
+
+    @media (max-width: 320px) {
+      font-size: $font-size-small - 1px;
+    }
+  }
+}
+
+body.home .footer-bottom {
+  padding-bottom: 60px;
+
+  @media (min-width: $grid-float-breakpoint) {
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-bottom: 88px;
   }
 }

@@ -11,18 +11,17 @@
       <ul class="footer-social">
         {% for social in site.social %}
           <li><a href="{{ social[1] }}" target="_blank">
-            <i class="fa fa-{{ social[0] }} fa-5x"></i>
+            <i class="fa fa-{{ social[0] }} fa-4x"></i>
           </a></li>
         {% endfor %}
         <li><a href="mailto:{{ site.email }}">
-          <i class="fa fa-envelope fa-5x"></i>
+          <i class="fa fa-envelope fa-4x"></i>
         </a></li>
       </ul>
     </div>
 
     <ul class="list-inline copyright">
       <li>
-        <br>
         &copy; {{ site.time | date: '%Y' }} {{ site.title }}
       </li>
 

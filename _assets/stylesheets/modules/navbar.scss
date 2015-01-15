@@ -7,9 +7,16 @@
 
     li {
       text-align: center;
-      font-size: ($font-size-base * 2);
       font-family: "TW Cen MT", "Century Gothic", CenturyGothic, Futura, "Trebuchet MS", $font-family-base;
       text-transform: uppercase;
+
+      @media (min-width: $screen-md-min) {
+        font-size: ($font-size-base * 1.6);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        font-size: ($font-size-base * 2);
+      }
 
       a, a:link, a:visited {
         color: #d9d9d9;
@@ -24,19 +31,6 @@
         font-size: $font-size-small;
         text-transform: lowercase;
       }
-
-      // &.odd a {
-      //   color: #d9d9d9;
-      // }
-
-      // &.even a {
-      //   color: lighten($brand-primary, 10%);
-      // }
-
-      // &.odd a:hover,
-      // &.even a:hover {
-      //   color: lighten($brand-primary, 25%);
-      // }
     }
   }
 
@@ -50,7 +44,15 @@ body {
   padding-top: 50px;
 
   @media (min-width: $grid-float-breakpoint) {
-    padding-top: 77px;
+    padding-top: 72px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding-top: 75px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-top: 78px;
   }
 
   &.home {
