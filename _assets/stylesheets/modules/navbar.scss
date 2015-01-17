@@ -7,7 +7,7 @@
 
     li {
       text-align: center;
-      font-family: "TW Cen MT", "Century Gothic", CenturyGothic, Futura, "Trebuchet MS", $font-family-base;
+      // font-family: "TW Cen MT", "Century Gothic", CenturyGothic, Futura, "Trebuchet MS", $font-family-base;
       text-transform: uppercase;
 
       @media (min-width: $screen-md-min) {
@@ -48,11 +48,11 @@ body {
   }
 
   @media (min-width: $screen-md-min) {
-    padding-top: 75px;
+    padding-top: 74px;
   }
 
   @media (min-width: $screen-lg-min) {
-    padding-top: 78px;
+    padding-top: 76px;
   }
 
   &.home {
