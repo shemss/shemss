@@ -1,20 +1,46 @@
+$logo-mobile-width: 40px;
+$logo-mobile-height: 40px;
+$logo-desktop-width: 40px;
+$logo-desktop-height: 40px;
+
 .navbar-brand {
   font-family: $font-family-serif;
   text-transform: uppercase;
   opacity: 0.7;
 
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
   &:after {
     content: " inc.";
     text-transform: none;
 
-    @media (min-width: $grid-float-breakpoint)
-    and (max-width: $screen-sm-max) {
-      content: none;
-    }
+    // @media (min-width: $grid-float-breakpoint)
+    // and (max-width: $screen-sm-max) {
+    //   content: none;
+    // }
   }
+
+  text-indent: -100000px;
+
+  width: ($logo-mobile-width + ($navbar-padding-horizontal * 2));
+  height: ($logo-mobile-height + ($navbar-padding-vertical / 2));
+
+  background: url("/images/favicon-white.png") no-repeat;
+  background-image: url("/images/favicon-white.svg"), none;
+  background-position: center center;
+  background-size: $logo-mobile-width $logo-mobile-height;
 
   @media (min-width: $grid-float-breakpoint) {
     position: absolute;
-    margin-top: 14px;
+    // margin-top: 14px;
+
+    width: ($logo-desktop-width + ($navbar-padding-horizontal * 2));
+    height: ($logo-desktop-height + ($navbar-padding-vertical * 2));
+    background-size: $logo-desktop-width $logo-desktop-height;
   }
 }
