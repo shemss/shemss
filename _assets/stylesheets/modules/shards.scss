@@ -27,27 +27,13 @@
       overflow: hidden;
       float: none;
 
-      -webkit-transition: width 0.5s;
-      transition: width 0.5s;
+      @media (min-width: $screen-md-min) {
+        -webkit-transition: width 0.5s;
+        transition: width 0.5s;
+      }
 
       border: solid #fff;
       border-width: 0 5px;
-
-      &.active {
-        width: 100%;
-
-        a, a:hover {
-          border: 0;
-        }
-
-        a:before {
-          background: rgba(0,0,0,0) !important;
-        }
-
-        .shard-title {
-          background: rgba(darken($brand-primary, 10%), 0.95);
-        }
-      }
 
       a {
         -webkit-transform: skew(24deg);
@@ -67,8 +53,8 @@
           height: 100%;
 
           background: rgba(0,0,0,0.3);
-          -webkit-transition: background 0.5s;
-          transition: background 0.5s;
+          // -webkit-transition: background 0.5s;
+          // transition: background 0.5s;
         }
 
         &:hover {
@@ -77,8 +63,24 @@
           }
 
           .shard-title {
-            background: rgba($brand-primary, 0.95);
+            background: rgba(darken($brand-primary, 17%), 0.95);
           }
+        }
+      }
+
+      &.active {
+        width: 100%;
+
+        a, a:hover {
+          border: 0;
+        }
+
+        a:before {
+          background: rgba(0,0,0,0) !important;
+        }
+
+        a .shard-title {
+          background: rgba(darken($brand-primary, 10%), 0.95);
         }
       }
     }
@@ -197,10 +199,10 @@
     padding-left: 30px;
     width: 100%;
 
-    background: rgba(darken($brand-primary, 20%), 0.95);
+    background: rgba(darken($brand-primary, 25%), 0.95);
     color: #fff;
 
-    -webkit-transition: background 0.5s;
-    transition: background 0.5s;
+    // -webkit-transition: background 0.5s;
+    // transition: background 0.5s;
   }
 }
