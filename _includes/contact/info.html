@@ -7,10 +7,13 @@
         </div>
         <p class="adr">{{ site.address }}</p>
         <div>
-          <span class="tel">{{ site.phone }}</span> Phone<br>
           <span class="tel">
-            <span class="value">{{ site.fax }}</span>
-            <span class="type">Fax</span>
+            <span class="value">{{ site.office }}</span>
+            <span class="type">Office</span>
+          </span><br>
+          <span class="tel">
+            <span class="value">{{ site.phone }}</span>
+            <span class="type">Phone</span>
           </span><br>
           <a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>
         </div>
