@@ -3,4 +3,5 @@
 //= require ./bootstrap
 //= require vendor/bootstrap-datepicker
 //= require forms
+//= require pages/contact
 // require pages/home
