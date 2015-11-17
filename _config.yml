@@ -12,7 +12,7 @@ address: >
 description: >
   Awesome construction company in Lake Tahoe
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://shemss.com" # the base hostname & protocol for your site
+url: "https://www.shemss.com" # the base hostname & protocol for your site
 
 social:
   facebook: https://www.facebook.com/shemssinc
